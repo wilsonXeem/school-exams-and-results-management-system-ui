@@ -18,6 +18,12 @@ import OtherCourse from "./pages/Admin/Course/ExternalCourse";
 import AdminStudentDashboard from "./pages/Admin/Student";
 import AdminTranscript from "./pages/Admin/Transcript";
 import SearchStudent from "./pages/Admin/SearchStudent";
+import ProbationSessions from "./pages/Admin/ProbationSessions"
+import OtherProbationSessions from "./pages/Admin/ProbationSessions/OtherProbationSessions";
+import ProbationList from "./pages/Admin/ProbationList"
+import ErrorStudents from "./pages/Admin/ErrorStudents";
+import ErrorStudentsSessions from "./pages/Admin/ErrorStudentsSessions";
+import OtherErrorStudentsSession from "./pages/Admin/ErrorStudentsSessions/OtherErrorStudentsSessions";
 
 import Student from "./pages/Student";
 import PasswordReset from "./pages/Student/PasswordReset";
@@ -50,6 +56,12 @@ function App() {
           <Route path="/admin/student/:_id" exact element={<AdminStudentDashboard />} />
           <Route path="/admin/student/transcript/:sesion/:level/:_id" exact element={<AdminTranscript/>}/>
           <Route path="/admin/search/student" exact element={<SearchStudent/>}/>
+          <Route path="/admin/faculty/probation/sessions" exact element={<ProbationSessions/>}/>
+          <Route path="/admin/faculty/probation/sessions/:sesion" exact element={<OtherProbationSessions/>}/>
+          <Route path="/admin/faculty/probation/list/:session/:_id/:level/:semester" exact element={<ProbationList />} />
+          <Route path="/admin/faculty/error/students/sessions" exact element={<ErrorStudentsSessions/>}/>
+          <Route path="/admin/faculty/error/students/sessions/:sesion" exact element={<OtherErrorStudentsSession/>}/>
+          <Route path="/admin/faculty/error/students/list/:session/:_id/:level/:semester" exact element={<ErrorStudents/>}/>
           
           <Route path="/student" exact element={<Student/>}/>
           <Route path="/student/password/reset" exact element={<PasswordReset/>}/>

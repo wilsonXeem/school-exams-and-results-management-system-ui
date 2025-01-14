@@ -69,3 +69,12 @@
 .brown{
   background-color: #d7ccc8;
 }
+
+.red{
+  background-color: #ef9a9a;
+}
+
+.error{
+  background-color: #d50000;
+  color: #ffff;
+}

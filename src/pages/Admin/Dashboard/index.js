@@ -58,6 +58,16 @@ function AdminDashboard() {
           color={"blue"}
           url={"/admin/faculty/external"}
         />
+        <Box
+          title={"Probation Lists"}
+          color={"red"}
+          url={"/admin/faculty/probation/sessions"}
+        />
+        <Box
+          title={"Error Students"}
+          color={"error"}
+          url={"/admin/faculty/error/students/sessions"}
+        />
       </div>
     </div>
   );

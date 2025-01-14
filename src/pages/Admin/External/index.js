@@ -99,10 +99,10 @@ function External() {
               </div>
             </div>
           ))}
-        </div>
+        </div>  
       </div>
       <div class="other_externals">
-        <h4>Other externals</h4>
+        <h4>Other Non-Professional Courses</h4>
         {externals.length > 0 && (
           <div>
             {externals.map((external, i) => (
